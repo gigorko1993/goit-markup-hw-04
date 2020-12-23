@@ -161,13 +161,9 @@ p {
 }
 
 .icon {
-  fill: var(--title-text-color);
+  /* fill: var(--title-text-color); */
   margin-right: 10px;
-}
-
-.icon:hover,
-.icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .envelope {
