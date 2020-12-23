@@ -92,6 +92,10 @@ p {
   background-color: var(--bg-color-white);
 }
 
+.header-border {
+  border-bottom: 1px solid var(--bg-color);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -137,6 +141,11 @@ p {
 }
 
 .auth-nav .link {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav .link {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -146,14 +155,31 @@ p {
   text-decoration: none;
 }
 
-.auth-nav a:hover,
-.auth-nav a:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: var(--accent-color);
 }
 
-.header-border {
-  border-bottom: 1px solid var(--bg-color);
+.icon {
+  fill: var(--title-text-color);
+  margin-right: 10px;
 }
+
+.icon:hover,
+.icon:focus {
+  fill: var(--accent-color);
+}
+
+.envelope {
+  width: 16px;
+  height: 10px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 /* hero  */
 .hero {
   max-width: 1600px;
