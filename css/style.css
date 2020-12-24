@@ -72,6 +72,15 @@ p {
   margin: -1px;
 }
 
+.icon {
+  fill: currentColor;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+}
+
 /* logo */
 .header .logo {
   margin-right: 90px;
@@ -365,8 +374,21 @@ p {
 }
 
 .our-team .social-list {
+  display: inline-flex;
+
   margin-right: 32px;
   margin-left: 32px;
+}
+
+.social-list > .icon-item {
+  display: inline-flex;
+
+  width: 44px;
+  height: 44px;
+}
+
+.social-list .icon-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .our-team .icon-thumb {
@@ -377,15 +399,9 @@ p {
   color: var(--social-link-color);
 
   margin: 0 auto;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-}
-
-.our-team .icon {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
 }
 
 .our-team .icon-thumb:hover,
@@ -394,8 +410,41 @@ p {
   color: var(--white-text-color);
 }
 
-/* футер */
-.footer {
+/* regular customers */
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers .icon-item {
+  display: flex;
+
+  width: 170px;
+  height: 90px;
+}
+
+.customers .icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--social-link-color);
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+}
+
+.customers .icon-thumb:hover,
+.customers .icon-thumb:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+/* footer */
+.footer > .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -437,7 +486,7 @@ p {
   font-style: normal;
 }
 
-/* Портфоліо */
+/* portfolio */
 .portfolio {
   background-color: var(--bg-color-white);
 }
