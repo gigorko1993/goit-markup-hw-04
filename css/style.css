@@ -186,9 +186,10 @@ p {
 
   text-align: center;
   padding-top: 200px;
+  margin: 0 auto;
 }
 
-.hero-title-box {
+.hero .title-box {
   width: 696px;
   margin: 0 auto;
 }
