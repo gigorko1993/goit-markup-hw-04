@@ -160,8 +160,7 @@ p {
   color: var(--accent-color);
 }
 
-.icon {
-  /* fill: var(--title-text-color); */
+.auth-nav .icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -254,6 +253,25 @@ p {
 }
 
 /* feautures  */
+.feautures .icon-thumb {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: var(--bg-color-secondary);
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.feautures .icon {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
+
 .feautures {
   display: flex;
 }
