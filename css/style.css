@@ -102,6 +102,7 @@ p {
 /* navigation */
 .header {
   background-color: var(--bg-color-white);
+  border-bottom: 1px solid #ececec;
 }
 
 .header-border {
